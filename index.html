@@ -1,0 +1,64 @@
+<!DOCTYPE html><!-- Dokumenttityyppi ilmoitetaan tässä. Kun käytetään HTML5 niin html tyypiksi -->
+<html lang="fi"><!-- html-elementin attribuuttina voidaan ilmoittaa sivun kieli -->
+<head><!-- head osioon lisätään mm. metatietoja, sivun otsikko, liitetään CSS-tiedostot. -->
+	<meta charset="utf-8"><!-- Yleensä kannattaa asettaa charset="utf-8" jotta kaikki merkit näkyvät oikein -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Responsiivisuutta varten -->
+	<title>Esimerkkisivu</title><!-- Sivun otsikko, joka näkyy selaimen välilehdessä -->
+	<meta name="description" content="Kuvaus sivusta"> <!-- Voi halutessaan lisätä monenlaisia meta-tietojan mutta eivät ole pakollisia. -->
+	<meta name="author" content="OMA NIMI">
+	
+	<!-- Ei pakollinen mutta hyödyllinen. Normalisoidaan tyylit, jotta sivu näyttää samalta jokaisella selaimella. Normalisoinnin sijasta voisi tehdä myös resetoinnin.
+	Lisää tietoa normalisoinnista: https://elad.medium.com/normalize-css-or-css-reset-9d75175c5d1e 
+	https://levelup.gitconnected.com/you-should-normalize-your-css-b16ce68971a5-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+	
+	<!--Liitetään erillinen tyylitiedosto-->
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body><!-- Sivuston näkyvä osio bodyn sisään. Eli teksti, kuvat, yms. -->
+
+	<main><!-- Sivuston rakennetta voidaan jakaa ja määritellä erilaisilla elementeillä. HTML5 toi mukanaan lisää nimettyjä elementtejä. 
+	Ennen käytettiin niiden tilalla perus <div> elementtejä -->
+
+		<header>
+			<div class="headerContainer">
+				<h1>GitHub-pages-testi</h1>
+			</div>
+		</header>
+		
+		<section>
+			<h1>Lorem ipsum</h1>
+			
+			<img src="kuvia/moon2.jpg" alt="Kuva kuusta" width="200" height="200" class="responsiveImg" id="kuuKuva">
+			
+			<p>Proin luctus diam a eleifend porttitor. Donec mollis nisl leo, nec bibendum sapien aliquam ut. 
+			Vestibulum finibus ex a ligula congue, egestas suscipit justo condimentum. Suspendisse et iaculis urna, 
+			quis accumsan dui. Morbi viverra dolor nec dolor pellentesque, vitae pharetra nulla venenatis. Integer 
+			auctor in nisl eu porta. Nunc luctus leo nec dui cursus sodales. In lacinia massa urna, at accumsan 
+			nisl posuere eu. Maecenas a urna ac odio placerat malesuada quis eu augue. Quisque mollis nisl sapien, 
+			at congue lorem feugiat non.</p>
+
+			<button onclick="hideAndShow()">Näytä / Piilota</button>
+
+			<div id="testi">Vestibulum finibus ex a ligula congue, egestas suscipit justo condimentum. Suspendisse et iaculis urna, 
+				quis accumsan dui. Morbi viverra dolor nec dolor pellentesque, vitae pharetra nulla venenatis. Integer 
+				auctor in nisl eu porta.</div>
+
+		</section>
+
+		<footer>---</footer>
+		
+	</main>
+	
+	<script src="js/scripts.js"></script><!-- Jos käytössä on erillinen JavaScript-tiedosto, niin sen voi liittää näin. -->
+</body><!-- Muistetaan aina sulkea elementit -->
+</html><!-- Muistetaan aina sulkea elementit -->
+
+
+
+
+
+
+
+
